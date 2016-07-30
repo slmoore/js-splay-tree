@@ -35,6 +35,7 @@
 
 ####Author:
   - Shawn Moore
+  - https://github.com/slmoore/js-splay-tree.git
 
 ####Original Binary Search Tree structure modeled after Java implementation by:
   - Robert Sedgewick

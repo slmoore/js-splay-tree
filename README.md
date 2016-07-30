@@ -32,9 +32,6 @@
   - `left` - Left child node.
   - `right` - Right child node.
 
-####Author:
-  - Shawn Moore
-
 ####Original Binary Search Tree structure modeled after Java implementation by:
   - Robert Sedgewick
   - algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BST.java
