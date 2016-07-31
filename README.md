@@ -8,7 +8,6 @@
   - splay-tree.js - version with full comments
   - splay-tree-clean.js - version with no comments
   - splay-tree.min.js - minified version
-  - index.html - demo
 
 ##See it in action:
   - [Splay Tree Visualizer](http://slmoore.github.io/SplayTreeVisualizer/)
