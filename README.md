@@ -5,6 +5,10 @@
   - The root rotation process is known as "splaying".
   - **This implementation is restricted to Numbers and Strings only**
   - **This implementation does not allow duplicate keys**
+  - splay-tree.js - version with full comments
+  - splay-tree-clean.js - version with no comments
+  - splay-tree.min.js - minified version
+  - index.html - demo
 
 ##See it in action:
   - [Splay Tree Visualizer](http://slmoore.github.io/SplayTreeVisualizer/)
@@ -31,6 +35,52 @@
   - `val` - data stored by the node.
   - `left` - Left child node.
   - `right` - Right child node.
+
+####Usage
+```
+  //example helpers
+  var nodes = '';
+  var trace = function(node) {
+      nodes += '{'+node.key + ' : ' + node.val + '} ';
+  }
+  var rootNow = function() {
+      console.log( 'root now: '  + splayTree.root.key );
+  }
+  var minNow = function() {
+      console.log( 'min: '+ splayTree.min().key +' : '+ splayTree.min().val );
+  }
+  var maxNow = function() {
+      console.log( 'max: '+ splayTree.max().key +' : '+ splayTree.max().val );
+  }
+
+  //create
+  var splayTree = new SplayBst();
+  
+  //insert and see root change
+  splayTree.insert(14409,'Mount Rainier');
+  rootNow();
+  
+  splayTree.insert(7979,'Mount Olympus');
+  rootNow();
+  
+  splayTree.insert(4167,'Mount Si');
+  rootNow();
+  
+  splayTree.insert(10781,'Mount Baker');
+  rootNow();
+
+  //min and max
+  minNow();
+  maxNow();
+
+  //traverse
+  splayTree.inOrder(splayTree.root, trace);
+  console.log('inorder traversal ' + nodes);
+
+  //remove and see root change
+  splayTree.remove(4167);
+  rootNow();
+```
 
 ####Original Binary Search Tree structure modeled after Java implementation by:
   - Robert Sedgewick
